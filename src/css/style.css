@@ -7,7 +7,10 @@
     font-size: 1.6rem;
 }
 
-:root {}
+:root {
+    --primary: #;
+    --secondary: #B6A264;
+}
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -38,10 +41,11 @@ html {
 }
 
 body {
-    font-family: "";
+    font-family: 'Champagne & Limousines';
     font-feature-settings: "case";
     line-height: 1.5;
-    background: #B5B5B5;
+    background: #FFFFFF;
+    color: #383838;
     max-width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
@@ -52,15 +56,14 @@ body {
 }
 
 button {
-    font-family: '';
     font-style: normal;
     font-weight: 400;
     cursor: pointer;
     border: none;
+    font-feature-settings: 'case'on;
 }
 
 span {
-    font-family: '';
     font-style: normal;
     font-weight: 400;
     font-feature-settings: 'case'on;
@@ -68,13 +71,10 @@ span {
 
 a {
     text-decoration: none;
-    color: #FFFFFF;
     width: fit-content;
 
-    font-family: 'GA ArtDeco';
     font-style: normal;
     font-weight: 400;
-    font-size: 2.4rem;
     font-feature-settings: 'case'on;
 }
 
@@ -87,15 +87,14 @@ p {
 }
 
 h1 {
-    font-family: 'GA Ptskari';
     font-style: normal;
     font-weight: 400;
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: 'GA Apkhazeti';
     font-style: normal;
     font-weight: 400;
+    font-feature-settings: 'case'on;
 }
 
 ul {
@@ -153,4 +152,165 @@ a[aria-current="page"] {
     html {
         font-size: 44.5%;
     }
+}
+
+header {}
+
+header .header-cont {
+    display: flex;
+    flex-direction: column;
+
+}
+
+header .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 44px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+header .header-top .user-int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+header .header-top .user-int div {
+    cursor: pointer;
+}
+
+header .header-top .user-int div:hover img {
+    filter: invert(69%) sepia(17%) saturate(872%) hue-rotate(8deg) brightness(91%) contrast(91%);
+}
+
+header .header-cat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 24px;
+
+    width: 88%;
+    margin: 0 auto;
+}
+
+header .header-cat li,
+header .header-cat li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    font-feature-settings: 'case'on;
+    white-space: nowrap;
+}
+
+header .header-cat li a:hover {
+    color: var(--secondary);
+}
+
+/* Main */
+button {
+    border: 1px solid #383838;
+    padding: 20px 80px;
+    margin: 12px;
+    background: transparent;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #383838;
+}
+
+button:hover {
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.main-hero {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.main-hero img {
+    object-fit: cover;
+    height: 540px;
+}
+
+.main-hero .hero-text {
+    text-align: center;
+    /* margin-top: 24px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-hero .hero-text h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-feature-settings: 'case'on;
+}
+
+.main-hero .hero-text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    max-width: 566px;
+    width: 100%;
+}
+
+.collection .heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.collection .heading h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.collection .heading p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 566px;
+    width: 100%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection .heading .swiper {
+    margin-top: 40px;
 }
