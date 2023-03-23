@@ -2,7 +2,7 @@
 document.body.classList.remove("preload");
 
 //Sliders
-if (document.getElementById("mainPage")) {
+if (document.querySelector(".collection")) {
   const swiper = new Swiper(".collection .mySwiper", {
     slidesPerView: 6,
     spaceBetween: 16,
